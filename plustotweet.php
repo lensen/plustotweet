@@ -6,7 +6,7 @@
  * 
  */
 
-require_once('twitter-oauth/twitteroauth.php');
+require_once('twitteroauth/twitteroauth.php');
 
 $google_userid = "<your_google_userid>";
 $google_key = "<your_google_api_key>";
