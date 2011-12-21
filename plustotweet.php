@@ -37,13 +37,12 @@ while (true) {
             echo "Not a new post. Skipping.\n";
         }
         else {
-            if ($title != "" and $verb != "share" ){ #!preg_match("/Reshared post.*/", $title) ) {
+            if ($title != "" and $verb != "share" ) {
                 $shorturl = @file_get_contents("http://hyv.es/api/?url=$url");
                 echo "Title: $title\nURL: $shorturl\n";
                 echo "Posting to Twitter\n";
                 $tweet->post('statuses/update', array('status' => "$title $shorturl"));
             }
-            echo "Last ID: $last_post_id\n";
         }
     }
     $checktime = (int)(date('U', time()));
