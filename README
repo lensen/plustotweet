@@ -1,7 +1,7 @@
 Run this script in the background and it will poll your Google+ feed for public posts every 5-10 minutes.
 If it finds any new posts it will post them to Twitter.
  
-Thanks to abraham williams for twitteroauth, get it here: https://github.com/abraham/twitteroauth
+Thanks to Matt Harris for tmhOAuth, get it here: https://github.com/themattharris/tmhOAuth
 For Google API keys, go here: https://code.google.com/apis/console
 For Twitter keys, tokens etc, go here: https://dev.twitter.com/apps
 
